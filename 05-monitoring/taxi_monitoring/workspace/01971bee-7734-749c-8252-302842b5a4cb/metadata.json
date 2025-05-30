@@ -1,0 +1,74 @@
+{
+  "id": "01971bee-7734-749c-8252-302842b5a4cb",
+  "name": "NYC Taxi Data Quality Project",
+  "description": "My project descriotion",
+  "dashboard": {
+    "name": "NYC Taxi Data Quality Project",
+    "panels": [
+      {
+        "type": "evidently:dashboard_panel:DashboardPanelCounter",
+        "id": "01971bff-64a1-7d30-9aed-9a91a4da3b02",
+        "title": "NYC taxi data dashboard",
+        "filter": {
+          "metadata_values": {},
+          "tag_values": [],
+          "include_test_suites": false
+        },
+        "size": 2,
+        "agg": "none",
+        "value": null,
+        "text": null
+      },
+      {
+        "type": "evidently:dashboard_panel:DashboardPanelPlot",
+        "id": "01971bff-64a3-761e-8245-850c82a1a60f",
+        "title": "Inference Count",
+        "filter": {
+          "metadata_values": {},
+          "tag_values": [],
+          "include_test_suites": false
+        },
+        "size": 1,
+        "values": [
+          {
+            "field_path": "current.number_of_rows",
+            "metric_id": "DatasetSummaryMetric",
+            "metric_fingerprint": null,
+            "metric_args": {},
+            "legend": "count"
+          }
+        ],
+        "plot_type": "bar"
+      },
+      {
+        "type": "evidently:dashboard_panel:DashboardPanelPlot",
+        "id": "01971bff-64a4-7d33-a42d-1a01fdcc3c1e",
+        "title": "Number of Missing Values",
+        "filter": {
+          "metadata_values": {},
+          "tag_values": [],
+          "include_test_suites": false
+        },
+        "size": 1,
+        "values": [
+          {
+            "field_path": "current.number_of_missing_values",
+            "metric_id": "DatasetSummaryMetric",
+            "metric_fingerprint": null,
+            "metric_args": {},
+            "legend": "count"
+          }
+        ],
+        "plot_type": "line"
+      }
+    ],
+    "tabs": [],
+    "tab_id_to_panel_ids": {}
+  },
+  "team_id": null,
+  "org_id": null,
+  "date_from": null,
+  "date_to": null,
+  "created_at": "2025-05-29T17:35:02.388894",
+  "version": "1"
+}
